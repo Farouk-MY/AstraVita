@@ -5,7 +5,7 @@ import {
 } from "@tabler/icons-react";
 import React, { useState } from "react";
 import RecordDetailsHeader from "./components/recordDetailsHeader";
-import FileUploadModal from "components/FileUploadModal";
+import FileUploadModal from "./components/FileUploadModal";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useStateContext } from "../../context";
 import { GoogleGenerativeAI } from "@google/generative-ai";
