@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Dark Theme */
+body.dark {
+  --bg-color: #13131a;
+  --text-color: #ffffff;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Light Theme */
+body.light {
+  --bg-color: #f0f0f0;
+  --text-color: #000000;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(0.8);
+}
